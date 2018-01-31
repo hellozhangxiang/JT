@@ -1,0 +1,109 @@
+ /*导航栏*/
+  .myHeaderUl>li{
+	position:relative;
+	border-bottom:1px solid transparent;
+	height:4em;
+    color: #1d1d1d;
+	z-index:1000;
+  }
+	.myHeaderUl li>a{
+		display:inline-block;
+		padding:1em 2.5em;
+		border-radius:0.2em;
+		cursor:point;
+	}
+	
+	.myHeaderUl li:hover{
+		background:red;
+		border-bottom:1px solid black;
+	}
+	.myHeaderUl li:last-child:hover{
+		background:#5d5959 !important;
+		border-bottom:1px solid black;
+	}
+	.top_log{
+			display:inline-block;
+		
+			
+		}
+	.myHeaderUl{
+		background:#5d5959;
+		list-style:none;
+		display:block;
+		padding:0;
+		border-radius:0.2em;
+		font-size:1.1em;
+		}
+	header div:nth-child(2){
+		position:relative;
+	}
+	.myHeaderUl>li>ul{
+		list-style-type: none;
+		position:absolute;
+		display:block;
+		height:0;/*inherit;*/
+		width:100%;
+		margin-bottom:2em;
+		background:#5d5959;
+		overflow:hidden;
+		border-radius:0.1em;
+		transition:all .3s linear;
+	}
+	.myHeaderUl>li>ul>li{
+		position:relative;
+		display:block;float:left;
+		width:100%;	
+		border-bottom:1px solid transparent;
+	}
+	.myHeaderUl>li>ul>li:last-child{}
+	.lider{
+		padding-top:0;
+		
+	}
+	header>.row:first-child{
+		
+	}
+
+	@media screen and (max-width:990px) and (min-width:541px){
+		.myHeaderUl li{
+			display:block;	
+		}
+		.myHeaderUl{
+			display:inline-block;
+			width:50%;
+		}
+		header div div.top_log{
+			position:absolute;
+			top:0;
+			right:0;
+			width:50%;
+			height:23.4em;
+		}
+	}
+/************/
+@media screen and (max-width:540px){
+		div.top_log{
+			display:block;
+			
+		}
+		.myHeaderUl{
+			width:100%;
+		}
+		.myHeaderUl li{
+			display:block;
+		
+		
+		}
+		
+	}
+/************/
+@media screen and (min-width:991px){
+	
+	.myHeaderUl li{
+			display:inline-block;
+	}
+	.myHeaderUl{margin-left:9%;}
+	div.top_log{
+		display:inline-block;
+	}
+}

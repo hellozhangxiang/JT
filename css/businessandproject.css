@@ -1,0 +1,45 @@
+/*业务*/
+.my-content-box{
+	height:26em;
+	position:relative;
+	overflow:hidden;
+	color:black;
+	padding:1em;
+}
+.my-content{
+	position:relative;
+	font-size:1em;
+	width:80%;
+	margin:auto auto;
+	top:-15%;
+	overflow:hidden;
+	height:2.2em;
+	border-radius:1em;
+	background:rgba(203,209,211,0);
+	transition:all .5s linear;
+}
+.my-content-box:hover .my-content{
+	top:-60%;
+	height:5em;
+	padding:15%;
+	background:rgba(203,209,211,0.7);
+}
+@media screen and (max-width:441px){
+	.my-content-box:hover .my-content{
+		top:-60%;
+		height:5em;
+		padding:15%;
+		background:rgba(203,209,211,0.7);
+	}
+	.my-content-box{
+		height:18em;
+	}
+}
+/*项目*/
+@media screen and (max-width:970px){
+	.project-intr{
+		display:none;
+		color:red;
+	}
+	
+}
